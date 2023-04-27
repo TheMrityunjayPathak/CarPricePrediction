@@ -1,6 +1,6 @@
 # CarPricePrediction
 
-**🚗Car Price Prediction using Linear Regression🚗**
+**Car Price Prediction using Linear Regression🚗**
 
 Hello Everybody, 👋 
 
@@ -8,7 +8,7 @@ Here is My Regression Project based on Predicting Price of Car using Linear Regr
 
 - **Dataset**
 
-I used Honda Used Car Selling Dataset which is my own Dataset uploaded on Kaggle.
+I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle.
 
 **Link of the Dataset:** https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling
 
@@ -22,9 +22,9 @@ Data Cleaning involves cleaning Different Columns of Dataset like Year, kms Driv
 
 - Removing kms Suffix from kms Driven Column by using str.split() Method and converting it into Integer.
 
-- Converting Price Column from 6.45 Lakh to 645000 and convering it into Integer.
+- Converting Price Column from 6.45 Lakh to 645000 and convering it into Integer by using a Custom Made Function.
 
-- From Car Model Column picking up First 3 Words and removing the rest for better Accuracy in Model.
+- From Car Model Column picking up First 3 Words and removing the rest of the Words for better Accuracy of Model.
 
 2️⃣ **Data Visualization**
 
@@ -32,21 +32,21 @@ Data Visualization involves visualizing Different Columns of Dataset like Year, 
 
 - Visualizing Year with Price by using Swarm Plot and concluded that Old Cars has less Price as Compared to New Cars and Number of Old Cars on sale is also lesser than New cars. 
 
-- Visualizing kms Driven with Price by using Relation Plot
+- Visualizing kms Driven with Price by using Relation Plot.
 
-- Visualizing Car Model with Price by using Relation Plot and Suspension as Hue Parameter
+- Visualizing Car Model with Price by using Relation Plot and Suspension as Hue Parameter.
 
 3️⃣ **Dummy Variable**
 
-Dummy Variable inovolves converting Text Data into Numerical Data by using pd.get_dummies() Method for Model Traning as our Model only works on Numerical Data.Fuel Type, Suspension, Car Model are Text Columns which has to be converted into Numerical Columns by usind Dummy Variable Concept.
+Dummy Variable Step inovolves converting Text Data into Numerical Data by using pd.get_dummies() Method for Model Traning as our Model only works on Numerical Data.Fuel Type, Suspension, Car Model are Text Columns which has to be converted into Numerical Columns by usind Dummy Variable Concept.
 
-- We first Create Dummy Variable Column based on the Text Column
+- We first Create Dummy Variable Column based on the Text Column.
 
-- Then we change it into a DataFrame
+- Then we change it into a DataFrame.
 
-- After that we will Merge the Dummies DataFrame and our Orignal DataFrame
+- After that we will Merge the Dummies DataFrame and our Orignal DataFrame.
 
-- Finally we will drop the Text Column from our Dataset
+- Finally we will drop the Text Column from our Dataset.
 
 4️⃣ **Outlier Removal**
 
@@ -66,8 +66,4 @@ I used Linear Regression for this Problem as here we have to Predict the Price o
 
 - So I cheked Cross_Val_Score of our Model for Measuring the Best Score of Model and then I have taken Mean of All that Scores.
 
-- And Finally I predicted the Result from our Model.
-
-
-
-
+- And Finally I predicted the Result from our Trained Model.
