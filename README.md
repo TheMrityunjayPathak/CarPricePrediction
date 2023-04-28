@@ -2,7 +2,7 @@
 
 **Car Price Prediction using Linear Regression🚗**
 
-Hello Everybody, 👋 
+Hello Everyone, 👋 
 
 Here is My Regression Project based on Predicting Price of Car using Linear Regression.
 
