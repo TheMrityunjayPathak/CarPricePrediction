@@ -68,4 +68,4 @@ I used Linear Regression for this Problem as here we have to Predict the Price o
 
 - And Finally I predicted the Result from our Trained Model.
 
-📌 **Link to Kaggle Notebook:** https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression
+📌 **Link to Notebook:** https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression
