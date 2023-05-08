@@ -1,5 +1,3 @@
-# CarPricePrediction
-
 **Car Price Prediction using Linear Regression🚗**
 
 Hello Everyone, 👋 
