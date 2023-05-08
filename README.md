@@ -1,4 +1,4 @@
-**Car Price Prediction using Linear Regression🚗**
+**🚗 Car Price Prediction using Linear Regression 🚗**
 
 Hello Everyone, 👋 
 
