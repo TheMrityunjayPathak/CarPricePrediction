@@ -4,11 +4,15 @@ Hello Everyone, 👋
 
 Here is My Regression Project based on Predicting Price of Car using Linear Regression.
 
+------------------------------------
+
 🔸**Dataset**
 
 I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle.
 
 📍 **Link of the Dataset :** [Honda Used Car Selling](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
+
+-------------------------------------
 
 🌐 **Setting up the Enviroment**
 
@@ -17,6 +21,8 @@ Jupyter Notebook is required for this project and you can install and set it up 
 Install the Notebook - `pip install notebook`
 
 Run the Notebook - `jupyter notebook`
+
+------------------------------------------
 
 🗃️ **Libraries required for Project**
 
@@ -43,6 +49,8 @@ Run the Notebook - `jupyter notebook`
 - Go to Terminal and run this code - `pip install sklearn`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
+
+--------------------------------------------
 
 📝 **Steps involved in the Project**
 
@@ -99,5 +107,7 @@ I used Linear Regression for this Problem as here we have to Predict the Price o
 - So I cheked Cross_Val_Score of our Model for Measuring the Best Score of Model and then I have taken Mean of All that Scores.
 
 - And Finally I predicted the Result from our Trained Model.
+
+--------------------------------
 
 📍**Link to Notebook :** [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
