@@ -10,7 +10,7 @@ Here is My Regression Project based on Predicting Price of Car using Linear Regr
 
 I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle.
 
-📍 **Link of the Dataset :** [Honda Used Car Selling](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
+📍 **Link to the Dataset :** [Honda Used Car Selling](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
 
 -------------------------------------
 
@@ -116,4 +116,4 @@ I used Linear Regression for this Problem as here we have to Predict the Price o
 
 --------------------------------
 
-📍**Link to Notebook :** [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
+📍**Link to the Notebook :** [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
