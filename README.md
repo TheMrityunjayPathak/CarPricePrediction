@@ -44,6 +44,12 @@ Run the Notebook - `jupyter notebook`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
 
+🔸**Seaborn**
+
+- Go to Terminal and run this code - `pip install seaborn`
+
+- Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
+
 🔸**Sklearn**
 
 - Go to Terminal and run this code - `pip install sklearn`
