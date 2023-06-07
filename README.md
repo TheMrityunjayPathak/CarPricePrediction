@@ -6,7 +6,7 @@ Here is My Regression Project based on Predicting Price of Car using Linear Regr
 
 ------------------------------------
 
-🔸**Dataset**
+🔸 **Dataset**
 
 I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle.
 
@@ -18,43 +18,43 @@ I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle
 
 Jupyter Notebook is required for this project and you can install and set it up in the terminal.
 
-Install the Notebook - `pip install notebook`
+> Install the Notebook - `pip install notebook`
 
-Run the Notebook - `jupyter notebook`
+> Run the Notebook - `jupyter notebook`
 
 ------------------------------------------
 
-🗃️ **Libraries required for Project**
+🗃️ **Libraries required for the Project**
 
-🔸**NumPy**
+🔸 **NumPy**
 
-- Go to Terminal and run this code - `pip install numpy`
+> Go to Terminal and run this code - `pip install numpy`
 
-- Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
+> Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
 
-🔸**Pandas**
+🔸 **Pandas**
 
-- Go to Terminal and run this code - `pip install pandas`
+> Go to Terminal and run this code - `pip install pandas`
 
-- Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
+> Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
 
-🔸**Matplotlib**
+🔸 **Matplotlib**
 
-- Go to Terminal and run this code - `pip install matplotlib`
+> Go to Terminal and run this code - `pip install matplotlib`
 
-- Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
+> Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
 
-🔸**Seaborn**
+🔸 **Seaborn**
 
-- Go to Terminal and run this code - `pip install seaborn`
+> Go to Terminal and run this code - `pip install seaborn`
 
-- Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
+> Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
 
-🔸**Sklearn**
+🔸 **Sklearn**
 
-- Go to Terminal and run this code - `pip install sklearn`
+> Go to Terminal and run this code - `pip install sklearn`
 
-- Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
+> Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
 
 --------------------------------------------
 
@@ -76,11 +76,17 @@ Data Cleaning involves cleaning Different Columns of Dataset like Year, kms Driv
 
 Data Visualization involves visualizing Different Columns of Dataset like Year, kms Driven, Fuel Type, Suspension, Car Model, Price and finding Relationship among them.
 
-- Visualizing Year with Price by using Swarm Plot and concluded that Old Cars has less Price as Compared to New Cars and Number of Old Cars on sale is also lesser than New cars. 
+- Visualizing Year with Price by using sns.swarmplot() and concluded that Old Cars has less Price as Compared to New Cars and Number of Old Cars on sale is also lesser than New cars.
 
-- Visualizing kms Driven with Price by using Relation Plot.
+![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/5e23ec76-ebe0-4f42-9d72-24b881eceeff)
 
-- Visualizing Car Model with Price by using Relation Plot and Suspension as Hue Parameter.
+- Visualizing kms Driven with Price by using sns.relplot().
+
+![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/3d7c4b1f-a2b3-47c7-8e0d-86c49aa80313)
+
+- Visualizing Car Model with Price by using sns.relplot() and Suspension as Hue Parameter.
+
+![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
 3️⃣ **Dummy Variable**
 
@@ -116,4 +122,4 @@ I used Linear Regression for this Problem as here we have to Predict the Price o
 
 --------------------------------
 
-📍**Link to the Notebook :** [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
+📍 **Link to the Notebook :** [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
