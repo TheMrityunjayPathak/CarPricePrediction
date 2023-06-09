@@ -18,9 +18,9 @@ I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle
 
 Jupyter Notebook is required for this project and you can install and set it up in the terminal.
 
-> Install the Notebook - `pip install notebook`
+- Install the Notebook - `pip install notebook`
 
-> Run the Notebook - `jupyter notebook`
+- Run the Notebook - `jupyter notebook`
 
 ------------------------------------------
 
@@ -28,33 +28,33 @@ Jupyter Notebook is required for this project and you can install and set it up 
 
 🔸 **NumPy**
 
-> Go to Terminal and run this code - `pip install numpy`
+- Go to Terminal and run this code - `pip install numpy`
 
-> Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
+- Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
 
 🔸 **Pandas**
 
-> Go to Terminal and run this code - `pip install pandas`
+- Go to Terminal and run this code - `pip install pandas`
 
-> Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
+- Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
 
 🔸 **Matplotlib**
 
-> Go to Terminal and run this code - `pip install matplotlib`
+- Go to Terminal and run this code - `pip install matplotlib`
 
-> Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
+- Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
 
 🔸 **Seaborn**
 
-> Go to Terminal and run this code - `pip install seaborn`
+- Go to Terminal and run this code - `pip install seaborn`
 
-> Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
+- Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
 
 🔸 **Sklearn**
 
-> Go to Terminal and run this code - `pip install sklearn`
+- Go to Terminal and run this code - `pip install sklearn`
 
-> Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
+- Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
 
 -------------------------------------------
 
