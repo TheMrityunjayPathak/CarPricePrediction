@@ -1,26 +1,26 @@
-**Car Price Prediction using Linear Regression**
+## Car Price Prediction using Linear Regression
 
-Hello Everyone, 👋 
+Hello Everyone,
 
 Here is My Regression Project based on Predicting Price of Car using Linear Regression.
 
-------------------------------------
+## Dataset
+
+I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on Kaggle.
+
+**Link to the Dataset :** [Honda Used Car Selling](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
+
+## Problem Statement
+
+The objective of this Project is to develop a Machine Learning Model that can accurately predict the prices of used cars based on various features and attributes. The predicted prices will assist both buyers and sellers in making informed decisions, ensuring fair transactions in the used car market.
 
 ## Table of Contents
 
-- [Dataset](#dataset)
 - [Setting up the Enviroment](#setting-up-the-enviroment)
 - [Libraries required for the Project](#libraries-required-for-the-project)
-- [Getting Started](#getting-started)
+- [Getting started with Repository](#getting-started)
 - [Steps involved in the Project](#steps-involved-in-the-project)
-
-## Dataset
-
-I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle.
-
-📍 **Link to the Dataset :** [Honda Used Car Selling](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
-
--------------------------------------
+- [Link to the Notebook](#link-to-the-notebook)
 
 ## Setting up the Enviroment
 
@@ -30,41 +30,37 @@ Jupyter Notebook is required for this project and you can install and set it up 
 
 - Run the Notebook - `jupyter notebook`
 
-------------------------------------------
-
 ## Libraries required for the Project
 
-🔸 **NumPy**
+**NumPy**
 
 - Go to Terminal and run this code - `pip install numpy`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install numpy`
 
-🔸 **Pandas**
+**Pandas**
 
 - Go to Terminal and run this code - `pip install pandas`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install pandas`
 
-🔸 **Matplotlib**
+**Matplotlib**
 
 - Go to Terminal and run this code - `pip install matplotlib`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install matplotlib`
 
-🔸 **Seaborn**
+**Seaborn**
 
 - Go to Terminal and run this code - `pip install seaborn`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install seaborn`
 
-🔸 **Sklearn**
+**Sklearn**
 
 - Go to Terminal and run this code - `pip install sklearn`
 
 - Go to Jupyter Notebook and run this code from a cell - `!pip install sklearn`
-
--------------------------------------------
 
 ## Getting Started
 
@@ -72,27 +68,24 @@ Jupyter Notebook is required for this project and you can install and set it up 
 ```
 git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 ```
---------------------------------------------
 
 ## Steps involved in the Project
 
-## Data Cleaning
+**Data Cleaning**
 
-Data Cleaning involves cleaning Different Columns of Dataset like Year, kms Driven, Fuel Type, Suspension, Car Model, Price and removing all the Anomalies of the Dataset.
+- Fuel Type, Suspension and Car Model has extra whitespaces which is removed by str.strip() Method.
 
-- Fuel Type, Suspension and Car Model has extra whitespaces which is removed by str.strip() Methods.
+- Removing kms Suffix from kms Driven Column by using str.split() Method and keeping only Numeric Part of the String and removing kms Suffix.
 
-- Removing kms Suffix from kms Driven Column by using str.split() Method and converting it into Integer.
+- After that we can convert kms Driven Column to int DataType.
 
-- Converting Price Column from 6.45 Lakh to 645000 and convering it into Integer by using a Custom Made Function.
+- Modifying Price Column from 6.45 Lakh to 645000 and convering it into Integer by using a Custom Made Function.
 
-- From Car Model Column picking up First 3 Words and removing the rest of the Words for better Accuracy of Model.
+- From Car Model Column we will keep only First 3 Words of Cae Model and removing the rest of the Words for better Model Traning.
 
-## Data Visualization
+**Data Visualization**
 
-Data Visualization involves visualizing Different Columns of Dataset like Year, kms Driven, Fuel Type, Suspension, Car Model, Price and finding Relationship among them.
-
-- Visualizing Year with Price by using sns.swarmplot() and concluded that Old Cars has less Price as Compared to New Cars and Number of Old Cars on sale is also lesser than New cars.
+- Visualizing Year with Price by using sns.swarmplot().
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/5e23ec76-ebe0-4f42-9d72-24b881eceeff)
 
@@ -104,9 +97,7 @@ Data Visualization involves visualizing Different Columns of Dataset like Year, 
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
-## Dummy Variable
-
-Dummy Variable Step inovolves converting Text Data into Numerical Data by using pd.get_dummies() Method for Model Traning as our Model only works on Numerical Data.Fuel Type, Suspension, Car Model are Text Columns which has to be converted into Numerical Columns by usind Dummy Variable Concept.
+**Dummy Variable**
 
 - We first Create Dummy Variable Column based on the Text Column.
 
@@ -116,19 +107,19 @@ Dummy Variable Step inovolves converting Text Data into Numerical Data by using 
 
 - Finally we will drop the Text Column from our Dataset.
 
-## Outlier Removal
+**Outlier Removal**
 
-After Describing the Dataset I noticed that In our kms Driven Column, 75% of Cars has driven 85000 kms and our Maximum Value in kms Driven is 11 Lakh kms which is an Outlier and similarly In our Price Column, 75% of Cars has Price 7 Lakh and our Maximum Price is 26 Lakh which is an Outlier and we have to remove them.
+- After describing the Dataset I noticed that in our kms Driven Column, 75% of Cars has driven 85000 kms and our Maximum Value in kms Driven is 11 Lakh kms which is an Outlier.
+  
+- And Similarly In our Price Column, 75% of Cars has Price 7 Lakh and our Maximum Price is 26 Lakh which is an Outlier.
 
-## Model Building
-
-I used Linear Regression for this Problem as here we have to Predict the Price of Car based on Certain Features.
+**Model Building**
 
 - Firstly I have definied Dependent and Independent Variables for our Traning and Testing.
 
-- I have splitted data into Traning and Testing by using Train Test Split.
+- I have splitted data into Traning and Testing Set by using Train Test Split.
 
-- Then I fit the Model with X_train and y_train and checked the Score.
+- Then I fitted the Model with X_train and y_train and checked the Score.
 
 - After that I used KFold Cross Validation for Measuring Accuracy of our Model.
 
@@ -136,6 +127,5 @@ I used Linear Regression for this Problem as here we have to Predict the Price o
 
 - And Finally I predicted the Result from our Trained Model.
 
---------------------------------
-
-📍 **Link to the Notebook :** [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
+## Link to the Notebook
+[Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
