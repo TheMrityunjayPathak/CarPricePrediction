@@ -6,7 +6,15 @@ Here is My Regression Project based on Predicting Price of Car using Linear Regr
 
 ------------------------------------
 
-🔸 **Dataset**
+## Table of Contents
+
+- [Dataset](#dataset)
+- [Setting up the Enviroment](#setting-up-the-enviroment)
+- [Libraries required for the Project](#libraries-required-for-the-project)
+- [Getting Started](#getting-started)
+- [Steps involved in the Project](#steps-involved-in-the-project)
+
+## Dataset
 
 I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle.
 
@@ -14,7 +22,7 @@ I used Honda Used Car Selling Dataset which is My own Dataset uploaded on Kaggle
 
 -------------------------------------
 
-🌐 **Setting up the Enviroment**
+## Setting up the Enviroment
 
 Jupyter Notebook is required for this project and you can install and set it up in the terminal.
 
@@ -24,7 +32,7 @@ Jupyter Notebook is required for this project and you can install and set it up 
 
 ------------------------------------------
 
-🗃️ **Libraries required for the Project**
+## Libraries required for the Project
 
 🔸 **NumPy**
 
@@ -66,9 +74,9 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 ```
 --------------------------------------------
 
-📝 **Steps involved in the Project**
+## Steps involved in the Project
 
-1️⃣ **Data Cleaning**
+## Data Cleaning
 
 Data Cleaning involves cleaning Different Columns of Dataset like Year, kms Driven, Fuel Type, Suspension, Car Model, Price and removing all the Anomalies of the Dataset.
 
@@ -80,7 +88,7 @@ Data Cleaning involves cleaning Different Columns of Dataset like Year, kms Driv
 
 - From Car Model Column picking up First 3 Words and removing the rest of the Words for better Accuracy of Model.
 
-2️⃣ **Data Visualization**
+## Data Visualization
 
 Data Visualization involves visualizing Different Columns of Dataset like Year, kms Driven, Fuel Type, Suspension, Car Model, Price and finding Relationship among them.
 
@@ -96,7 +104,7 @@ Data Visualization involves visualizing Different Columns of Dataset like Year, 
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
-3️⃣ **Dummy Variable**
+## Dummy Variable
 
 Dummy Variable Step inovolves converting Text Data into Numerical Data by using pd.get_dummies() Method for Model Traning as our Model only works on Numerical Data.Fuel Type, Suspension, Car Model are Text Columns which has to be converted into Numerical Columns by usind Dummy Variable Concept.
 
@@ -108,11 +116,11 @@ Dummy Variable Step inovolves converting Text Data into Numerical Data by using 
 
 - Finally we will drop the Text Column from our Dataset.
 
-4️⃣ **Outlier Removal**
+## Outlier Removal
 
 After Describing the Dataset I noticed that In our kms Driven Column, 75% of Cars has driven 85000 kms and our Maximum Value in kms Driven is 11 Lakh kms which is an Outlier and similarly In our Price Column, 75% of Cars has Price 7 Lakh and our Maximum Price is 26 Lakh which is an Outlier and we have to remove them.
 
-5️⃣ **Model Building**
+## Model Building
 
 I used Linear Regression for this Problem as here we have to Predict the Price of Car based on Certain Features.
 
