@@ -12,7 +12,9 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 ## Problem Statement
 
-The objective of this Project is to develop a Machine Learning Model that can accurately predict the prices of used cars based on various features and attributes. The predicted prices will assist both buyers and sellers in making informed decisions, ensuring fair transactions in the used car market.
+- The objective of this Project is to develop a Machine Learning Model that can accurately predict the prices of used cars based on various features and attributes.
+  
+- The predicted prices will assist both buyers and sellers in making informed decisions, ensuring fair transactions in the used car market.
 
 ## Table of Contents
 
@@ -20,6 +22,7 @@ The objective of this Project is to develop a Machine Learning Model that can ac
 - [Libraries required for the Project](#libraries-required-for-the-project)
 - [Getting started with Repository](#getting-started)
 - [Steps involved in the Project](#steps-involved-in-the-project)
+- [Conclusion](#conclusion)
 - [Link to the Notebook](#link-to-the-notebook)
 
 ## Setting up the Enviroment
@@ -126,6 +129,16 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 - So I cheked Cross_Val_Score of our Model for Measuring the Best Score of Model and then I have taken Mean of All that Scores.
 
 - And Finally I predicted the Result from our Trained Model.
+
+## Conclusion
+
+- In conclusion, the Car Price Prediction model developed using Linear Regression achieved a score of 0.83.
+
+- This indicates that the model can accurately predict car prices to a significant extent.
+
+- However, it's important to note that while the model performed well with an 0.83 score, there is always room for improvement.
+
+- Further refinement and exploration of other regression techniques or feature engineering methods could potentially enhance the model's performance even further.
 
 ## Link to the Notebook
 [Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
