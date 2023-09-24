@@ -1,4 +1,4 @@
-## Car Price Prediction using Linear Regression
+## Car Price Prediction
 
 Hello Everyone,
 
@@ -141,4 +141,4 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 - Further refinement and exploration of other regression techniques or feature engineering methods could potentially enhance the model's performance even further.
 
 ## Link to the Notebook
-[Car Price Prediction using Linear Regression](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
+[Car Price Prediction](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
