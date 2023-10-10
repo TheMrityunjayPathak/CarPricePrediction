@@ -132,13 +132,9 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 ## Conclusion
 
-- In conclusion, the Car Price Prediction model developed using Linear Regression achieved a score of 0.83.
+- Developed a highly accurate Linear Regression Model using various features and attributes to predict used car prices, achieving an average prediction accuracy of 82%.
 
-- This indicates that the model can accurately predict car prices to a significant extent.
-
-- However, it's important to note that while the model performed well with an 0.83 score, there is always room for improvement.
-
-- Further refinement and exploration of other regression techniques or feature engineering methods could potentially enhance the model's performance even further.
+- Further Model showcased its robustness by undergoing rigorous k-fold cross-validation, resulting in a mean cross-validation score of 83%.
 
 ## Link to the Notebook
 [Car Price Prediction](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
