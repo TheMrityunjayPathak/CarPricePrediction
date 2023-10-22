@@ -138,3 +138,6 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 ## Link to the Notebook
 [Car Price Prediction](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction-using-linear-regression)
+
+| [Scroll to Top ⬆️](#car-price-prediction) |
+|:---:|
