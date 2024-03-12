@@ -1,14 +1,14 @@
 #Importing Libraries
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
 #Reading CSV File
 df = pd.read_csv("Cleaned_Car_Data.csv")
 
 #Loading ML Model
 with open('model.pkl', 'rb') as file:
-    model = joblib.load(file)
+    model = pickle.load(file)
 
 #Setting Page Configuration
 st.set_page_config(page_title="AutoValuate",page_icon="🚗",layout="centered")
