@@ -1,7 +1,6 @@
 #Importing Libraries
 import streamlit as st
 import pandas as pd
-import sklearn
 import pickle
 
 #Reading CSV File
