@@ -22,6 +22,8 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 - This Web App allows you to predict the price of a car by just selecting some of its features and fill in some details.
 
+- I have named it AutoValuate.
+
 **Link to the Web App :** [Car Price Prediction App](https://car-price-prediction-using-lr.streamlit.app/)
 
 ![image](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/b95fdf1a-efb2-49ea-8dfc-d96be84416a8)
