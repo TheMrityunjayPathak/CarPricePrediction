@@ -32,7 +32,7 @@ with col1:
 with col2:
     car_model = st.selectbox(label="Select the Fuel Type",options=df["Car Model"].unique(),placeholder="Select the Model of Your Car",index=None)
 
-    kms_driven = st.number_input(label="Enter the KMS Driven",placeholder="Type the KMS Driven of Your Car",value=None,min_value=1000,max_value=150000,step=1000)
+    kms_driven = st.number_input(label="Enter the KMS Driven",placeholder="Enter the KMS Driven of Your Car",value=None,min_value=1000,max_value=150000,step=1000)
 
     col3, col4 = st.columns(2)
 
