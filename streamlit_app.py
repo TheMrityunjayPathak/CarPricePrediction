@@ -7,6 +7,9 @@ import pickle
 #Reading CSV File
 df = pd.read_csv("Cleaned_Car_Data.csv")
 
+#Outlier Removal
+df = df[df["Price"]<1000000]
+
 #Loading ML Model
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
@@ -30,9 +33,9 @@ with col1:
     st.image("car.jpg",use_column_width=True)
 
 with col2:
-    car_model = st.selectbox(label="Select the Fuel Type",options=df["Car Model"].unique(),placeholder="Select the Model of Your Car",index=None)
+    car_model = st.selectbox(label="Select the Car Model",options=df["Car Model"].unique(),placeholder="Select the Model of Your Car",index=None)
 
-    kms_driven = st.number_input(label="Enter the KMS Driven",placeholder="Enter the KMS Driven of Your Car",value=None,min_value=1000,max_value=150000,step=1000)
+    kms_driven = st.number_input(label="Enter the KMS Driven",placeholder="Enter the KMS Driven of Your Car",value=None,min_value=2000,max_value=140000,step=1000)
 
     col3, col4 = st.columns(2)
 
@@ -74,6 +77,9 @@ df4 = pd.concat([df3,car_dummies],axis = "columns")
 #Dropping Unwanted Column
 df5 = df4.drop(["Fuel Type","Suspension","Car Model"],axis = "columns")
 
+#Outlier Removal
+df5 = df5[df5["kms Driven"]<150000]
+
 #Defining the Correct Order for Columns
 model_features = ['Year', 'kms Driven', 'CNG', 'Diesel', 'Petrol', 'Automatic',
        'Manual', 'Honda Accord 2.4', 'Honda Accord VTi-L', 'Honda Amaze E',
@@ -104,5 +110,8 @@ df5 = df5[model_features]
 
 #Making Prediction by Trained ML Model
 if pred:
-    prediction = model.predict(df5)
-    st.success(f"Predicted Price of Your Car is : ₹{prediction[0]:,.0f}", icon='✅')
+    prediction = model.predict(df5)[0]
+    if prediction < 0:
+        st.error("Predicted Price is below Zero, Please select Valid Inputs.", icon="⚠️")
+    else:
+        st.success(f"Predicted Price of Your Car is : ₹{prediction:,.0f}", icon="✅")
