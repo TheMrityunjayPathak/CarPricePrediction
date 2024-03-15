@@ -10,6 +10,8 @@ df = pd.read_csv("Cleaned_Car_Data.csv")
 #Outlier Removal
 df = df[df["Price"]<1000000]
 
+df = df[df["kms Driven"]<150000]
+
 #Loading ML Model
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
@@ -46,7 +48,7 @@ with col2:
 
     year = st.slider(label="Select the Year",min_value=2000,max_value=2023,step=1)
 
-    pred = st.button("Predict")
+    pred = st.button("Predict",use_container_width=True)
 
 #Creating DataFrame
 data = {'Year': [year], 'kms Driven': [kms_driven], 'Fuel Type': [fuel_type], 'Suspension': [suspension_type], 'Car Model': [car_model]}
@@ -76,9 +78,6 @@ df4 = pd.concat([df3,car_dummies],axis = "columns")
 
 #Dropping Unwanted Column
 df5 = df4.drop(["Fuel Type","Suspension","Car Model"],axis = "columns")
-
-#Outlier Removal
-df5 = df5[df5["kms Driven"]<150000]
 
 #Defining the Correct Order for Columns
 model_features = ['Year', 'kms Driven', 'CNG', 'Diesel', 'Petrol', 'Automatic',
@@ -110,8 +109,11 @@ df5 = df5[model_features]
 
 #Making Prediction by Trained ML Model
 if pred:
-    prediction = model.predict(df5)[0]
-    if prediction < 0:
-        st.error("Predicted Price is below Zero, Please select Valid Inputs.", icon="⚠️")
+    if any([car_model is None, kms_driven is None, fuel_type is None, suspension_type is None]):
+        st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
     else:
-        st.success(f"Predicted Price of Your Car is : ₹{prediction:,.0f}", icon="✅")
+        prediction = model.predict(df5)[0]
+        if prediction < 0:
+            st.error("Predicted Price is Below Zero, Please select Valid Inputs.", icon="⚠️")
+        else:
+            st.success(f"Predicted Price of Your Car is : ₹{prediction:,.0f}", icon="✅")
