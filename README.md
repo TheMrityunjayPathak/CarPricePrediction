@@ -22,13 +22,17 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 - This Web App allows you to predict the price of a car by just selecting some of its features and fill in some details.
 
-- This Web App also has constraints in some of the Input Feilds, Like :
-  
-  - Value of kms Driven must lie between 2000 and 140000.
- 
-  - User must select all Input Feild before Pressing Predict Button, else Error Message Popups.
- 
-  - If the Predicted Price is -ve for any Input Values, Then You must select different values for more Accurate Prediction.
+- These all are the features you need to select or enter before Pressing the Predict Button :
+
+  - ➡️ 𝗬𝗲𝗮𝗿 : Select the manufacturing Year of the Car.
+  - ➡️ 𝗸𝗺𝘀 𝗗𝗿𝗶𝘃𝗲𝗻 : Input the Total Distance the Car has traveled.
+  - ➡️ 𝗙𝘂𝗲𝗹 𝗧𝘆𝗽𝗲 : Choose the Fuel Type of the Car.
+  - ➡️ 𝗦𝘂𝘀𝗽𝗲𝗻𝘀𝗶𝗼𝗻 : Pick the Type of Suspension the Car has.
+  - ➡️ 𝗖𝗮𝗿 𝗠𝗼𝗱𝗲𝗹 : Select Your Car Model from the available options.
+
+- After selecting all these features, Just hit the '𝗣𝗿𝗲𝗱𝗶𝗰𝘁' Button.
+
+- This Web App also has multiple constraints in the Input Feilds.
 
 - I have named it AutoValuate.
 
