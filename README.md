@@ -8,7 +8,7 @@ Here is My Regression Project based on Predicting Price of Car using Linear Regr
 
 I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on Kaggle.
 
-**Link to the Dataset :** [Honda Used Car Selling](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
+**Link to the Dataset :** [Car Price Dataset](https://www.kaggle.com/datasets/themrityunjaypathak/honda-car-selling)
 
 ## Problem Statement
 
