@@ -12,7 +12,7 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 ## Problem Statement
 
-- The objective of this Project is to develop a Machine Learning Model that can accurately predict the prices of used cars based on various features and attributes.
+- To develop a Machine Learning Model that can accurately predict the prices of used cars based on various features and attributes.
   
 - The predicted prices will assist both buyers and sellers in making informed decisions, ensuring fair transactions in the used car market.
 
