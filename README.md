@@ -38,7 +38,7 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 **Link to the Web App :** [Car Price Prediction App](https://car-price-prediction-using-lr.streamlit.app/)
 
-![image](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/9c4ed16e-6741-48db-88ed-778c212ac380)
+<a href="https://car-price-prediction-using-lr.streamlit.app/"><img src="https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/9c4ed16e-6741-48db-88ed-778c212ac380"/></a>
 
 ## Table of Contents
 
