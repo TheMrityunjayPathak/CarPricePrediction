@@ -24,13 +24,17 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 - These all are the features you need to select or enter before Pressing the Predict Button :
 
-  - Year : Select the manufacturing Year of the Car.
-  - kms Driven : Input the Total Distance the Car has traveled.
-  - Fuel Type : Choose the Fuel Type of the Car.
-  - Suspension : Pick the Type of Suspension the Car has.
-  - Car Model : Select Your Car Model from the available options.
+  - **Year** : Select the manufacturing Year of the Car.
+    
+  - **kms Driven** : Input the Total Distance the Car has traveled.
+    
+  - **Fuel Type** : Choose the Fuel Type of the Car.
+    
+  - **Suspension** : Pick the Type of Suspension the Car has.
+    
+  - **Car Model** : Select Your Car Model from the available options.
 
-- After selecting all these features, Just hit the "Predict" Button.
+- After selecting all these features, Just hit the '**Predict**' Button.
 
 - This Web App also has multiple constraints in the Input Feilds.
 
