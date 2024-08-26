@@ -24,13 +24,13 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 
 - These all are the features you need to select or enter before Pressing the Predict Button :
 
-  - 𝗬𝗲𝗮𝗿 : Select the manufacturing Year of the Car.
-  - 𝗸𝗺𝘀 𝗗𝗿𝗶𝘃𝗲𝗻 : Input the Total Distance the Car has traveled.
-  - 𝗙𝘂𝗲𝗹 𝗧𝘆𝗽𝗲 : Choose the Fuel Type of the Car.
-  - 𝗦𝘂𝘀𝗽𝗲𝗻𝘀𝗶𝗼𝗻 : Pick the Type of Suspension the Car has.
-  - 𝗖𝗮𝗿 𝗠𝗼𝗱𝗲𝗹 : Select Your Car Model from the available options.
+  - Year : Select the manufacturing Year of the Car.
+  - kms Driven : Input the Total Distance the Car has traveled.
+  - Fuel Type : Choose the Fuel Type of the Car.
+  - Suspension : Pick the Type of Suspension the Car has.
+  - Car Model : Select Your Car Model from the available options.
 
-- After selecting all these features, Just hit the '𝗣𝗿𝗲𝗱𝗶𝗰𝘁' Button.
+- After selecting all these features, Just hit the "Predict" Button.
 
 - This Web App also has multiple constraints in the Input Feilds.
 
@@ -112,15 +112,15 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 **Data Visualization**
 
-- Visualizing Year with Price by using sns.swarmplot().
+- Visualizing Year with Price by using sns.swarmplot()
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/5e23ec76-ebe0-4f42-9d72-24b881eceeff)
 
-- Visualizing kms Driven with Price by using sns.relplot().
+- Visualizing kms Driven with Price by using sns.relplot()
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/3d7c4b1f-a2b3-47c7-8e0d-86c49aa80313)
 
-- Visualizing Car Model with Price by using sns.relplot() and Suspension as Hue Parameter.
+- Visualizing Car Model with Price by using sns.relplot() and Suspension as Hue Parameter
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
