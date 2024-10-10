@@ -51,7 +51,6 @@ I used Honda Used Car Selling Dataset which is one of my own Dataset uploaded on
 - [Getting started with Repository](#getting-started)
 - [Steps involved in the Project](#steps-involved-in-the-project)
 - [Conclusion](#conclusion)
-- [Link to the Notebook](#link-to-the-notebook)
 
 ## Setting up the Enviroment
 
