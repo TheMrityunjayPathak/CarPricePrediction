@@ -190,7 +190,7 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 <br>
 
-<div align='center'>
+<div align='right'>
   
 **[`^        Scroll to Top       ^`](#car-price-prediction)**
 
