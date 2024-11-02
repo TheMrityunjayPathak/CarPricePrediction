@@ -187,7 +187,7 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 - Further model showcased its robustness by undergoing rigorous k-fold cross-validation, resulting in a mean cross-val score of 83%.
 
-<div align='right'>
+<div align='left'>
   
 **[`^        Scroll to Top       ^`](#car-price-prediction)**
 
