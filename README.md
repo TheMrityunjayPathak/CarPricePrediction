@@ -2,7 +2,7 @@
 
 Hello Everyone,
 
-Here is my regression project based on predicting price of used car using Linear Regression.
+Here is my regression project based on predicting the price of used cars using Linear Regression.
 
 ## Dataset
 
