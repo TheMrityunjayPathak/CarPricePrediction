@@ -20,7 +20,7 @@ I used Honda Used Car Selling Dataset which is one of my own dataset uploaded on
 
 - For my project, I have created a Streamlit Web App for predicting the prices of cars in more interactive and user friendly way.
 
-- This web app allows you to predict the price of a car by just selecting some of its features and fill in some details.
+- This web app allows you to predict the prices of the cars by just selecting some of its features and fill in some details.
 
 - These all are the features you need to select or enter before pressing the predict button :
 
