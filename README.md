@@ -173,7 +173,7 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 - I have splitted data into traning and testing set by using train_test_split.
 
-- Then I fit the model with X_train and y_train and checked the ccore.
+- Then I fit the model with X_train and y_train and checked the score.
 
 - After that I used k-fold cross-validation for measuring accuracy of our model.
 
