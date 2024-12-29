@@ -32,7 +32,7 @@ with col1:
     st.write(" ")
     st.write(" ")
     st.write(" ")
-    st.image("car.jpg",use_column_width=True)
+    st.image("car.jpg",use_container_width=True)
 
 with col2:
     car_model = st.selectbox(label="Select the Car Model",options=df["Car Model"].unique(),placeholder="Select the Model of Your Car",index=None)
