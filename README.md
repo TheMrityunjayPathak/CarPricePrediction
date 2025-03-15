@@ -177,7 +177,7 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 - After that I used k-fold cross-validation for measuring accuracy of our model.
 
-- So I cheked the cross_val_score for measuring the best score of our model and then I have taken mean of all the scores.
+- So I cheked the cross_val_score to get the best score of our model and then I have taken mean of all the scores.
 
 - And, Finally I predicted the result from our trained model.
 
