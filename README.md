@@ -36,7 +36,7 @@ I used Honda Used Car Selling Dataset which is one of my own dataset uploaded on
 
 - After selecting all these features, Just hit the '**Predict**' Button.
 
-- This web app also has multiple constraints in the input fields.
+- This web app also has multiple error handling mechanisms to gracefully manage unexpected situations
 
 - I have named it AutoValuate.
 
