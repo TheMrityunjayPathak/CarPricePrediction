@@ -114,65 +114,71 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 **Data Cleaning**
 
-- fuel_type, suspension and car_model has extra whitespaces which is removed by str.strip() method.
+- Fuel Type, Suspension and Car Model has extra whitespaces which gets removed by str.strip() method.
 
-- Removed kms suffix from kms_driven column by using str.split() method and keeping only numeric part of the column.
+- Removed 'kms' suffix from Kms Driven column by using str.split() method and keeping only numeric part of the column.
 
-- After that we can convert kms_driven column to **'int'** DataType.
+- After that I converted Kms Driven column to 'int' DataType.
 
-- Modifying price column from 6.45 Lakh to 645000 and convering it into integer by using a custom made function.
+- Modified the Price column from 6.45 Lakh to 645000 and converted it into integer by using a custom made function.
 
-- From car_model column we will keep only first 3 words of car name and removing the rest.
+- From Car Model column I kept only the first 3 words of car name and removed the rest.
 
 **Data Visualization**
 
-- Visualizing year with price by using sns.swarmplot()
+- Visualizing year with price column by using sns.swarmplot().
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/5e23ec76-ebe0-4f42-9d72-24b881eceeff)
 
-- Visualizing kms_driven with price by using sns.relplot()
+- Visualizing kms_driven with price column by using sns.relplot().
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/3d7c4b1f-a2b3-47c7-8e0d-86c49aa80313)
 
-- Visualizing car_model with price by using sns.relplot() and suspension as **'hue'** parameter
+- Visualizing car_model with price column by using sns.relplot() and suspension as 'hue' parameter.
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
 **Dummy Variable**
 
-- We first create dummy variable column based on the text column.
+- I first created dummy variables based on the categorical columns.
 
-- Then we transform it into a DataFrame.
+- Then I transformed them into a DataFrame.
 
-- After that we will merge the dummies DataFrame and our orignal DataFrame.
+- After that I merged the dummies DataFrame and the orignal DataFrame.
 
-- Finally we will drop the text column from our dataset.
+- Finally I dropped the categorical columns from the dataset.
 
 **Outlier Removal**
 
-- After describing the dataset I noticed that in kms_driven column, 75% of cars has travelled 85000 kms and our maximum value in kms_driven is 11 Lakh kms which is an outlier.
+- First I used df.describe() method to get a summary of all numerical columns.
+
+- Then I noticed that in kms_driven column, 75% of cars has travelled 85000 kms and the maximum value in kms_driven is 11 Lakh kms which is an outlier.
   
-- And similarly, In our price column, 75% of cars has price 7 Lakh and our maximum price is 26 Lakh which is an outlier.
+- And similarly, In price column, 75% of cars has price of 7 Lakh and the maximum car price is 26 Lakh which is an outlier.
 
 **Model Building**
 
-- Firstly I have definied dependent and independent variables for our traning and testing.
+- I started by defining dependent and independent variables (X, y).
 
-- I have splitted data into traning and testing set by using train_test_split.
+- Then I split the data into traning and testing set by using train_test_split.
 
-- Then I fit the model with X_train and y_train and checked the score.
+- Then I fit the data on linear regression and checked the score.
 
-- After that I used k-fold cross-validation for measuring accuracy of our model.
+- After that I used k-fold_cross_validation for further testing the robustness of the model.
 
-- So I cheked the cross_val_score to get the best score of our model and then I have taken mean of all the scores.
+- So I cheked mean cross_val_score of the model to further evaluate its prediction accuracy.
 
-- And, Finally I predicted the result from our trained model.
+- And, finally I predicted the results from the trained model.
 
 ## Conclusion
 
-- Developed a highly accurate Linear Regression Model using various features and attributes to predict used car prices, achieving an average prediction accuracy of 82%.
+- Trained a highly accurate Linear Regression model using various features and attributes to predict used car prices.
 
-- Further model showcased its robustness by undergoing rigorous k-fold cross-validation, resulting in a mean cross-val score of 83%.
+- Achieving an average prediction accuracy of 82%.
+
+- Further model showcased its robustness by undergoing rigorous k-fold cross-validation, resulting in a mean cross-val-score of 83%.
+
+- Lastly, I created a web application by using Streamlit.
 
 <div align='left'>
   
