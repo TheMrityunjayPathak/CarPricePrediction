@@ -1,8 +1,10 @@
 ## Car Price Prediction
 
-Hello Everyone,
+The used car market plays a vital role in the automotive industry, offering a variety of vehicles at different price points.
 
-Here is my regression project based on predicting the price of used cars using Linear Regression.
+This dataset provides a snapshot of used car listings with key attributes such as model, year, fuel type, suspension and kms driven.
+
+These factors contribute significantly to the price of a used car.
 
 ## Dataset
 
