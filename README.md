@@ -174,13 +174,13 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 ## Conclusion
 
-- Trained a highly accurate Linear Regression model using various features and attributes to predict used car prices.
+- Developed a highly accurate linear model to predict used car prices using various features and attributes.
 
-- Achieving an average prediction accuracy of 82%.
+- Achieved an average prediction accuracy of 82% demonstrating strong model performance.
 
-- Further model showcased its robustness by undergoing rigorous k-fold cross-validation, resulting in a mean cross-val-score of 83%.
+- Validated model robustness through rigorous k-fold cross-validation, resulting in a mean cross-val score of 83%.
 
-- Lastly, I created a web application by using Streamlit.
+- Created an interactive application using streamlit, enabling users to input data and receive real-time predictions.
 
 <div align='left'>
   
