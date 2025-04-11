@@ -116,15 +116,15 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 **Data Cleaning**
 
-- Fuel Type, Suspension and Car Model has extra whitespaces which gets removed by str.strip() method.
+- fuel type, suspension and car model column has extra whitespaces which gets removed by str.strip() method.
 
-- Removed 'kms' suffix from Kms Driven column by using str.split() method and keeping only numeric part of the column.
+- Removed 'kms' suffix from kms driven column and stored only numeric part of the column.
 
-- After that I converted Kms Driven column to 'int' DataType.
+- After that I converted kms driven column to 'int' DataType.
 
-- Modified the Price column from 6.45 Lakh to 645000 and converted it into integer by using a custom made function.
+- Transformed the price column from 6.45 Lakh to 645000 and then converted it into int datatype.
 
-- From Car Model column I kept only the first 3 words of car name and removed the rest.
+- From car model column, I kept only the first 3 words of car name and removed the rest.
 
 **Data Visualization**
 
@@ -132,11 +132,11 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/5e23ec76-ebe0-4f42-9d72-24b881eceeff)
 
-- Visualizing kms_driven with price column by using sns.relplot().
+- Visualizing kms driven with price column by using sns.relplot().
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/3d7c4b1f-a2b3-47c7-8e0d-86c49aa80313)
 
-- Visualizing car_model with price column by using sns.relplot() and suspension as 'hue' parameter.
+- Visualizing car model with price column by using sns.relplot() and suspension as 'hue' parameter.
 
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
@@ -148,15 +148,17 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 - After that I merged the dummies DataFrame and the orignal DataFrame.
 
-- Finally I dropped the categorical columns from the dataset.
+- And finally I dropped the categorical columns from the dataset.
 
 **Outlier Removal**
 
 - First I used df.describe() method to get a summary of all numerical columns.
 
-- Then I noticed that in kms_driven column, 75% of cars has travelled 85000 kms and the maximum value in kms_driven is 11 Lakh kms which is an outlier.
+- Then I noticed in kms driven column,
+
+- 75% of cars travelled 85000 kms and the maximum value in kms driven is 11 Lakh kms which is an outlier.
   
-- And similarly, In price column, 75% of cars has price of 7 Lakh and the maximum car price is 26 Lakh which is an outlier.
+- And in price column, 75% of cars has price of 7 Lakh and the maximum price is 26 Lakh which is an outlier.
 
 **Model Building**
 
@@ -166,7 +168,7 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 - Then I fit the data on linear regression and checked the score.
 
-- After that I used k-fold_cross_validation for further testing the robustness of the model.
+- After that I used k-fold cross validation for further testing the robustness of model.
 
 - So I cheked mean cross_val_score of the model to further evaluate its prediction accuracy.
 
