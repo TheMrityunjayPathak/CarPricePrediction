@@ -1,5 +1,5 @@
 ## Car Price Prediction
-- The used car market plays a vital role in the automotive industry, offering a variety of vehicles at different price points.
+- The used car market plays a vital role in the automotive industry, offering a variety of cars at different price points.
 - This dataset provides a snapshot of used car listings with key attributes such as model, year, fuel type and more.
 - These factors contribute significantly to the price of a used car.
 
@@ -97,10 +97,13 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 
 **Data Visualization**
 - Visualizing year with price column by using sns.swarmplot().
+  
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/5e23ec76-ebe0-4f42-9d72-24b881eceeff)
 - Visualizing kms driven with price column by using sns.relplot().
+
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/3d7c4b1f-a2b3-47c7-8e0d-86c49aa80313)
 - Visualizing car model with price column by using sns.relplot() and suspension as 'hue' parameter.
+  
 ![download](https://github.com/TheMrityunjayPathak/CarPricePrediction/assets/123563634/c5faa6d5-46ed-4995-82fe-ec042beca0e4)
 
 **Dummy Variable**
@@ -112,7 +115,7 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 **Outlier Removal**
 - First I used df.describe() method to get a summary of all numerical columns.
 - Then I noticed something in the dataste that looks unusual.
-- 75% of the cars travelled 85000 kms and the maximum value in kms driven column is 11 Lakh kms which is an outlier.
+- 75% of the cars travelled 85K kms and the maximum value in kms driven column is 110K kms which is an outlier.
 - And 75% of the cars has priced at 7 Lakh and the maximum price is 26 Lakh which is an outlier.
 
 **Model Building**
@@ -122,7 +125,9 @@ git clone https://github.com/TheMrityunjayPathak/CarPricePrediction.git
 - After that I used k-fold cross validation for further testing the robustness of the model.
 - So I cheked mean cross_val_score of the model to evaluate its prediction accuracy.
 - Then I predicted the results from the trained model.
-- Finally I evaluated the model using metris like R2-Score, MAE, MAPE, etc. 
+- Finally I evaluated the model using metris like R2-Score, MAE, MAPE, etc.
+
+<hr>
 
 ## Conclusion
 - Developed a highly accurate linear model to predict used car prices using various features and attributes.
