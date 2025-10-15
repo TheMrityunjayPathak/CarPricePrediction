@@ -1,29 +1,27 @@
-#Importing Libraries
-import streamlit as st
-import pandas as pd
-import sklearn
+# Importing Libraries
 import pickle
+import pandas as pd
+import streamlit as st
 
-#Reading CSV File
-df = pd.read_csv("Cleaned_Car_Data.csv")
+# Setting Page Configuration
+st.set_page_config(page_title="AutoValuate", page_icon="🚗", layout="centered")
 
-#Outlier Removal
+# Reading CSV File
+df = pd.read_csv("clean_cars_data.csv")
+
+# Outlier Removal
 df = df[df["Price"]<1000000]
-
 df = df[df["kms Driven"]<150000]
 
-#Loading ML Model
+# Loading ML Model
 with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-#Setting Page Configuration
-st.set_page_config(page_title="AutoValuate",page_icon="🚗",layout="centered")
-
+# Creating Header
 st.markdown("<div style='background-color:#219C90; border-radius:50px; align-items:center; justify-content: center;'><h1 style='text-align:center; color:white;'>AutoValuate</h1></div>",unsafe_allow_html=True)
-
 st.markdown("<h4 style='text-align:center; color:black;'>Find the Best Price for Your Car</h4>",unsafe_allow_html=True)
 
-#Styling Streamlit Web App
+# Customizing Streamlit App Layout
 col1, col2 = st.columns(2)
 
 with col1:
@@ -32,54 +30,49 @@ with col1:
     st.write(" ")
     st.write(" ")
     st.write(" ")
-    st.image("car.jpg",use_container_width=True)
+    st.image("banner.jpg", use_container_width=True)
 
 with col2:
-    car_model = st.selectbox(label="Select the Car Model",options=df["Car Model"].unique(),placeholder="Select the Model of Your Car",index=None)
+    car_model = st.selectbox(label="Select the Car Model", options=df["Car Model"].unique(), placeholder="Select the Model of Your Car", index=None)
 
-    kms_driven = st.number_input(label="Enter the KMS Driven",placeholder="Enter the KMS Driven of Your Car",value=None,min_value=2000,max_value=140000,step=1000)
+    kms_driven = st.number_input(label="Enter the KMS Driven", placeholder="Enter the KMS Driven of Your Car", value=None, min_value=2000, max_value=140000, step=1000)
 
     col3, col4 = st.columns(2)
-
     with col3:
-        fuel_type = st.radio(label="Select the Fuel Type",options=df["Fuel Type"].unique(),index=None)
+        fuel_type = st.radio(label="Select the Fuel Type", options=df["Fuel Type"].unique(), index=None)
     with col4:
-        suspension_type = st.radio(label="Select the Suspension Type",options=df["Suspension"].unique(),index=None)
+        suspension_type = st.radio(label="Select the Suspension Type", options=df["Suspension"].unique(), index=None)
 
-    year = st.slider(label="Select the Year",min_value=2000,max_value=2023,step=1)
+    year = st.slider(label="Select the Year", min_value=2000, max_value=2023, step=1)
 
-    pred = st.button("Predict",use_container_width=True)
+    pred = st.button("Predict", use_container_width=True)
 
-#Creating DataFrame
+# Creating Input DataFrame
 data = {'Year': [year], 'kms Driven': [kms_driven], 'Fuel Type': [fuel_type], 'Suspension': [suspension_type], 'Car Model': [car_model]}
-
 df1 = pd.DataFrame(data)
 
-#Dummies for Fuel Type
-dummies1 = pd.get_dummies(df1["Fuel Type"],dtype = "int")
-
+# Dummies for Fuel Type
+dummies1 = pd.get_dummies(df1["Fuel Type"], dtype="int")
 fuel_dummies = pd.DataFrame(dummies1)
 
-df2 = pd.concat([df1,fuel_dummies],axis = "columns")
+df2 = pd.concat([df1,fuel_dummies], axis="columns")
 
-#Dummies for Suspension
-dummies2 = pd.get_dummies(df2["Suspension"],dtype = "int")
-
+# Dummies for Suspension
+dummies2 = pd.get_dummies(df2["Suspension"], dtype="int")
 suspension_dummies = pd.DataFrame(dummies2)
 
-df3 = pd.concat([df2,suspension_dummies],axis = "columns")
+df3 = pd.concat([df2,suspension_dummies], axis="columns")
 
-#Dummies for Car Model
-dummies3 = pd.get_dummies(df3["Car Model"],dtype = "int")
-
+# Dummies for Car Model
+dummies3 = pd.get_dummies(df3["Car Model"], dtype="int")
 car_dummies = pd.DataFrame(dummies3)
 
-df4 = pd.concat([df3,car_dummies],axis = "columns")
+df4 = pd.concat([df3,car_dummies], axis="columns")
 
-#Dropping Unwanted Column
-df5 = df4.drop(["Fuel Type","Suspension","Car Model"],axis = "columns")
+# Dropping Unwanted Column
+df5 = df4.drop(["Fuel Type","Suspension","Car Model"], axis="columns")
 
-#Defining the Correct Order for Columns
+# Defining the Correct Order for Columns
 model_features = ['Year', 'kms Driven', 'CNG', 'Diesel', 'Petrol', 'Automatic',
        'Manual', 'Honda Accord 2.4', 'Honda Accord VTi-L', 'Honda Amaze E',
        'Honda Amaze EX', 'Honda Amaze Exclusive', 'Honda Amaze S',
@@ -100,20 +93,20 @@ model_features = ['Year', 'kms Driven', 'CNG', 'Diesel', 'Petrol', 'Automatic',
        'Honda Mobilio V', 'Honda WR-V Edge', 'Honda WR-V SV', 'Honda WR-V VX',
        'Honda WR-V i-DTEC', 'Honda WR-V i-VTEC']
 
-#Adjusting the Features to match the Original DataFrame
+# Adjusting the Features to match the Original DataFrame
 for feature in model_features:
     if feature not in df5.columns:
         df5[feature] = 0
 
 df5 = df5[model_features]
 
-#Making Prediction by Trained ML Model
+# Making Prediction by Trained ML Model
 if pred:
     if any([car_model is None, kms_driven is None, fuel_type is None, suspension_type is None]):
-        st.error("Please, Select all Inputs before Pressing Predict Button.",icon="📝")
+        st.error("Please select all inputs before pressing Predict Button.",icon="📝")
     else:
         prediction = model.predict(df5)[0]
         if prediction < 0:
-            st.error("Predicted Price is Below Zero, Please select Valid Inputs.", icon="⚠️")
+            st.error("Predicted Price is below zero, Please select valid inputs.", icon="⚠️")
         else:
             st.success(f"Predicted Price of Your Car is : ₹{prediction:,.0f}", icon="✅")
