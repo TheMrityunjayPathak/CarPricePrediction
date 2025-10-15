@@ -1,5 +1,5 @@
 ## Car Price Prediction
-- The used car market plays a vital role in the automotive industry, offering a variety of cars at different price points.
+- The used car market plays a vital role in the automotive industry, offering a variety of cars at different prices.
 - This dataset provides a snapshot of used car listings with key attributes such as model, year, fuel type and more.
 - These factors contribute significantly to the price of a used car.
 
